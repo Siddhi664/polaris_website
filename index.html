@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Polaris Solutions</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="brand">
+
+<div class="logo">★ Polaris Solutions</div>
+<div class="tagline">Your True North Guiding Star</div>
+
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#why-choose">Why Choose Us</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-left">
+
+<h1>
+Small Fix or Big Project — We've Got You Covered
+</h1>
+
+<p class="hero-text">
+Whether you need help fixing an Excel formula, cleaning data, building dashboards, or creating complete automation systems, we design solutions that simplify workflows and improve business productivity using Excel, Google Sheets, automation tools, and smart data systems.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#services" class="btn">View Services</a>
+<a href="#projects" class="btn">See My Projects</a>
+<a href="#" class="btn" onclick="openConnectModal()">Let's Connect</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-right">
+<img src="workflow.png" alt="Workflow Illustration">
+</div>
+
+</section>
+
+
+<section class="about">
+
+<h2>About Me</h2>
+
+<div class="about-container">
+
+<img src="me.jpg" alt="Siddhi">
+
+<div class="about-text">
+
+<h3>Hi, I'm Siddhi.</h3>
+
+<p>
+I work as an L2 Technical Support Specialist and automation consultant. I help businesses organize their work and automate repetitive tasks using Excel, Google Sheets and workflow automation systems.
+</p>
+
+<p>
+My goal is simple — create systems that make work faster, clearer and easier to manage.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="services">
+
+<h2>Services</h2>
+<p class="section-subtitle">From Spreadsheet Fixes to Complete Business Automation</p>
+
+<div class="services-grid">
+
+<div class="service-item" onclick="openService('s1')">
+<img src="icons/excel.svg">
+<span>Excel & Google Workspace Problem Solving</span>
+</div>
+
+<div class="service-item" onclick="openService('s2')">
+<img src="icons/automation.svg">
+<span>Business Automation Systems</span>
+</div>
+
+<div class="service-item" onclick="openService('s3')">
+<img src="icons/crm.svg">
+<span>CRM & Lead Management Systems</span>
+</div>
+
+<div class="service-item" onclick="openService('s4')">
+<img src="icons/data.svg">
+<span>Business Data & Reporting Systems</span>
+</div>
+
+<div class="service-item" onclick="openService('s5')">
+<img src="icons/templates.svg">
+<span>Spreadsheet Templates & Productivity Tools</span>
+</div>
+
+<div class="service-item" onclick="openService('s6')">
+<img src="icons/message.svg">
+<span>Communication & Messaging Automation</span>
+</div>
+
+<div class="service-item" onclick="openService('s7')">
+<img src="icons/ar.svg">
+<span>AR / Interactive Visualization Solutions</span>
+</div>
+
+<div class="service-item" onclick="openService('s8')">
+<img src="icons/custom.svg">
+<span>Custom Business Solutions</span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICE MODAL -->
+
+<div id="serviceModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeService()">&times;</span>
+
+<div id="serviceBody"></div>
+
+</div>
+
+</div>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects">
+
+<h2>Projects</h2>
+<p class="section-subtitle">Explore some of the projects where automation, data systems, and innovative solutions were used to solve real business problems.</p>
+
+<div class="projects-grid">
+
+<div class="project-card" onclick="openProject('p1')">
+AR Product Visualization System
+</div>
+
+<div class="project-card" onclick="openProject('p2')">
+WhatsApp Automation System
+</div>
+
+<div class="project-card" onclick="openProject('p3')">
+Automated Lead Distribution & Sales Dashboard
+</div>
+
+<div class="project-card" onclick="openProject('p4')">
+Market Research Data System
+</div>
+
+<div class="project-card" onclick="openProject('p5')">
+Data Cleaning & Observation Reporting
+</div>
+
+<div class="project-card" onclick="openProject('p6')">
+Product Catalogue Development
+</div>
+
+<div class="project-card" onclick="openProject('p7')">
+Call Activity & Status Dashboard
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECT MODAL -->
+
+<div id="projectModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeProject()">&times;</span>
+
+<div id="modalBody"></div>
+
+</div>
+
+</div>
+
+<!-- WHY CHOOSE POLARIS SECTION -->
+<section id="why-choose" class="why-choose">
+
+<h2>Why Choose Polaris Solutions</h2>
+
+<div class="why-choose-container">
+
+<img src="me.jpg" alt="Siddhi">
+
+<div class="why-choose-text">
+
+<h3>Your Trusted Automation Partner</h3>
+
+<p>
+With years of experience as an L2 Technical Support Specialist and automation consultant, I bring proven expertise to every project. My solutions are built to be reliable, scalable, and tailored specifically to your business needs.
+</p>
+
+<p>
+I focus on creating systems that not only solve today's problems but also grow with your business. From simple Excel fixes to complex automation workflows, you get personalized attention and results that deliver real value.
+</p>
+
+<p>
+<strong>Why clients choose me:</strong>
+</p>
+
+<ul>
+<li>✅ Deep technical expertise in Excel, Google Sheets, and automation</li>
+<li>✅ Proven track record with real business projects</li>
+<li>✅ Fast turnaround on both small fixes and large systems</li>
+<li>✅ Ongoing support and system improvements</li>
+<li>✅ Clear communication throughout the process</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ SECTION -->
+
+<section id="faq" class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<div class="faq-question">What services do you provide? <span>▼</span></div>
+<div class="faq-answer">
+We provide solutions for Excel, Google Sheets, data analysis, dashboards, workflow automation, CRM guidance, and business productivity systems tailored to your needs.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Can you help fix an existing Excel or Google Sheets file? <span>▼</span></div>
+<div class="faq-answer">
+Yes. If you already have a spreadsheet or system, we can review it, fix issues, improve formulas, and optimize it for better performance.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Do you build custom automation systems? <span>▼</span></div>
+<div class="faq-answer">
+Yes. We design customized systems such as dashboards, reporting tools, inventory trackers, lead tracking systems, and workflow automation.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">What tools do you work with? <span>▼</span></div>
+<div class="faq-answer">
+We work with Advanced Excel, Google Sheets, Microsoft Word, PowerPoint, AI tools, and various automation platforms.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">How long does a project usually take? <span>▼</span></div>
+<div class="faq-answer">
+Small fixes may take a few hours, while complete systems may take a few days depending on complexity.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Do you offer support after the project is completed? <span>▼</span></div>
+<div class="faq-answer">
+Yes. Support and improvements can be provided if you need updates or adjustments later.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">What if I'm not sure exactly what system I need? <span>▼</span></div>
+<div class="faq-answer">
+You can simply describe your workflow or problem and we will recommend the best solution.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Is my business data kept confidential? <span>▼</span></div>
+<div class="faq-answer">
+Yes. All data shared during the project is treated as strictly confidential.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Can your systems scale as my business grows? <span>▼</span></div>
+<div class="faq-answer">
+Yes. Systems are designed to support larger datasets, more users and additional features.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Do you provide guidance on improving business processes? <span>▼</span></div>
+<div class="faq-answer">
+Yes. We help identify opportunities to automate tasks and improve workflows.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">What happens after I submit the form? <span>▼</span></div>
+<div class="faq-answer">
+After submission, we review your request and respond with the next steps within 24 hours.
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>If you'd like to discuss a project or automation system, feel free to reach out.</p>
+
+<div class="contact-info">
+
+<p><strong>Email:</strong> 
+<a href="mailto:siddhiladdha2004@gmail.com">
+siddhiladdha2004@gmail.com
+</a>
+</p>
+
+<p><strong>Phone:</strong> 
+<a href="tel:+917499685501">
++91 7499685501
+</a>
+</p>
+
+<p>
+<a href="https://forms.gle/i7Fesptj1GpM7tcBA" target="_blank" class="contact-btn">
+Fill Contact Form
+</a>
+</p>
+
+<p>
+<a href="https://wa.me/917499685501" target="_blank" class="whatsapp-btn">
+Chat on WhatsApp
+</a>
+</p>
+
+</div>
+
+</section>
+
+<script>
+
+/* FAQ ACCORDION */
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+
+item.querySelector(".faq-question").addEventListener("click", () => {
+
+item.classList.toggle("active");
+
+});
+
+});
+
+
+/* PROJECT MODAL SYSTEM */
+
+function openProject(project){
+
+const modal = document.getElementById("projectModal");
+const body = document.getElementById("modalBody");
+
+let content="";
+
+if(project==="p1"){
+content=`
+<h2>AR Product Visualization System</h2>
+<p>Developed an Augmented Reality product visualization experience that allows customers to view Glow Garden products in their real environment using 3D models. Customers can place the product in their space to understand size, placement, and visual appearance before purchasing.</p>
+<p><strong>Technologies Used:</strong> AR Web Experience, GLB 3D Models</p>
+<p><a href="https://glowgardenar.netlify.app/" target="_blank">View Reference</a></p>
+<img src="ARGlowOFF.png">
+<img src="ARGlowON.png">
+<img src="ARCode.png">
+`;
+}
+
+if(project==="p2"){
+content=`
+<h2>WhatsApp Automation System</h2>
+<p>Built a custom WhatsApp automation system without using the official API. The system connects Google Sheets with WhatsApp using Python and browser automation.</p>
+<p><strong>Technologies Used:</strong> Python, Selenium, Google Sheets</p>
+<img src="WhatsappAutoLeads.png">
+<img src="WhatsappAutoMsg.png">
+<img src="WhatsappAutoMsg2.png">
+<img src="WhatsappCode.png">
+`;
+}
+
+if(project==="p3"){
+content=`
+<h2>Automated Lead Distribution & Sales Dashboard</h2>
+<p>Designed a lead management system that automatically assigns leads to Regional Sales Managers based on the customer's city and region.</p>
+<p><strong>Technologies Used:</strong> Google Sheets, Pivot Tables</p>
+<img src="GGDashboard.png">
+<img src="GGLeads.png">
+<img src="GGPivotTable.png">
+`;
+}
+
+if(project==="p4"){
+content=`
+<h2>Market Research Data System</h2>
+<p>Conducted research on night attractions across India and organized the data into a structured spreadsheet system.</p>
+<img src="NightAttractionAnalysis.png">
+`;
+}
+
+if(project==="p5"){
+content=`
+<h2>Data Cleaning & Observation Reporting</h2>
+<p>Improved the quality of an existing dataset by cleaning inconsistent entries and organizing the data for reporting.</p>
+<img src="Data Cleaning & Observation Reporting.png">
+`;
+}
+
+if(project==="p6"){
+content=`
+<h2>Product Catalogue Development</h2>
+<p>Created a structured product catalogue to help the client present their offerings clearly to customers.</p>
+<img src="Product Catalogue Development.png">
+`;
+}
+
+if(project==="p7"){
+content=`
+<h2>Call Activity & Status Dashboard</h2>
+<p>Developed a dashboard for a SAT-related company to track calling activity and outcomes. The system organizes large datasets of call records.</p>
+<p><strong>Technologies Used:</strong> Advanced Excel / Google Sheets</p>
+<img src="SATDashboard.png">
+<img src="SATLeads.png">
+`;
+}
+
+body.innerHTML = content;
+modal.style.display="flex";
+history.pushState({modalOpen:true},"");
+}
+
+function closeProject(){
+document.getElementById("projectModal").style.display="none";
+}
+
+window.addEventListener("popstate", function(){
+const modal=document.getElementById("projectModal");
+if(modal.style.display==="flex"){
+modal.style.display="none";
+}
+});
+
+window.onclick = function(event){
+const modal=document.getElementById("projectModal");
+if(event.target === modal){
+modal.style.display="none";
+}
+};
+
+/* SERVICE MODAL FUNCTIONS */
+
+function openService(service){
+const modal = document.getElementById("serviceModal");
+const body = document.getElementById("serviceBody");
+
+let content="";
+
+if(service==="s1"){
+content=`
+<h2>Excel & Google Workspace Problem Solving</h2>
+<p>Get solutions for any Excel, Google Sheets, Microsoft Word, or PowerPoint problems — fixing formulas, cleaning data, or building automation systems.</p>
+<div class="service-actions">
+<a href="tel:+917499685501" class="contact-btn">Call</a>
+<a href="https://wa.me/917499685501" target="_blank" class="whatsapp-btn">WhatsApp</a>
+</div>
+`;
+}
+
+if(service==="s2"){
+content=`
+<h2>Business Automation Systems</h2>
+<p>Automate business workflows using Excel, Google Sheets, and integrations that reduce manual work.</p>
+<div class="service-actions">
+<a href="tel:+917499685501" class="contact-btn">Call</a>
+<a href="https://wa.me/917499685501" target="_blank" class="whatsapp-btn">WhatsApp</a>
+</div>
+`;
+}
+
+if(service==="s3"){
+content=`
+<h2>CRM & Lead Management Systems</h2>
+<p>Build custom lead tracking and CRM systems to manage sales pipelines and customer interactions.</p>
+<div class="service-actions">
+<a href="tel:+917499685501" class="contact-btn">Call</a>
+<a href="https://wa.me/917499685501" target="_blank" class="whatsapp-btn">WhatsApp</a>
+</div>
+`;
+}
+
+if(service==="s4"){
+content=`
+<h2>Business Data & Reporting Systems</h2>
+<p>Create dashboards, reporting tools, and organized data systems for business insights.</p>
+<div class="service-actions">
+<a href="tel:+917499685501" class="contact-btn">Call</a>
+<a href="https://wa.me/917499685501" target="_blank" class="whatsapp-btn">WhatsApp</a>
+</div>
+`;
+}
+
+if(service==="s5"){
+content=`
+<h2>Spreadsheet Templates & Productivity Tools</h2>
+<p>Custom templates for planning, operations tracking, and productivity management.</p>
+<div class="service-actions">
+<a href="tel:+917499685501" class="contact-btn">Call</a>
+<a href="https://wa.me/917499685501" target="_blank" class="whatsapp-btn">WhatsApp</a>
+</div>
+`;
+}
+
+if(service==="s6"){
+content=`
+<h2>Communication & Messaging Automation</h2>
+<p>Automate WhatsApp messaging, notifications, and communication workflows.</p>
+<div class="service-actions">
+<a href="tel:+917499685501" class="contact-btn">Call</a>
+<a href="https://wa.me/917499685501" target="_blank" class="whatsapp-btn">WhatsApp</a>
+</div>
+`;
+}
+
+if(service==="s7"){
+content=`
+<h2>AR / Interactive Visualization Solutions</h2>
+<p>Interactive augmented reality solutions for showcasing products digitally.</p>
+<div class="service-actions">
+<a href="tel:+917499685501" class="contact-btn">Call</a>
+<a href="https://wa.me/917499685501" target="_blank" class="whatsapp-btn">WhatsApp</a>
+</div>
+`;
+}
+
+if(service==="s8"){
+content=`
+<h2>Custom Business Solutions</h2>
+<p>Tailored automation systems, dashboards, and workflow tools built for your business needs.</p>
+<div class="service-actions">
+<a href="tel:+917499685501" class="contact-btn">Call</a>
+<a href="https://wa.me/917499685501" target="_blank" class="whatsapp-btn">WhatsApp</a>
+</div>
+`;
+}
+
+body.innerHTML = content;
+modal.style.display="flex";
+history.pushState({modalOpen:true},"");
+}
+
+function closeService(){
+document.getElementById("serviceModal").style.display="none";
+}
+
+</script>
+<!-- CONNECT MODAL -->
+<div id="connectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeConnect()">&times;</span>
+    <div id="connectBody">
+      <h2>Let's Connect</h2>
+      <p>Choose your preferred way to get in touch:</p>
+      <div class="connect-actions">
+        <a href="tel:+917499685501" class="connect-btn call-btn">📞 Call: +91 7499685501</a>
+        <a href="https://wa.me/917499685501" target="_blank" class="connect-btn whatsapp-btn">💬 WhatsApp: +91 7499685501</a>
+        <a href="mailto:siddhiladdha2004@gmail.com" class="connect-btn mail-btn">✉️ Email: siddhiladdha2004@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function openConnectModal() {
+  const modal = document.getElementById("connectModal");
+  modal.style.display = "flex";
+  history.pushState({modalOpen: true}, "");
+}
+
+function closeConnect() {
+  document.getElementById("connectModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
