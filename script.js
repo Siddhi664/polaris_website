@@ -229,6 +229,7 @@ history.pushState({modalOpen:true},"");
 
 function closeService(){
 document.getElementById("serviceModal").style.display="none";
+document.body.style.overflow = "auto";
 }
 
 /* MODAL EVENT LISTENERS */
