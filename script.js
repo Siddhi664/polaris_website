@@ -96,6 +96,7 @@ content=`
 
 body.innerHTML = content;
 modal.style.display="flex";
+document.body.style.overflow = "hidden";
 history.pushState({modalOpen:true},"");
 }
 
@@ -109,7 +110,30 @@ const modal = document.getElementById("serviceModal");
 const body = document.getElementById("serviceBody");
 
 let content="";
+if(service==="s0"){
+content=`
+<h2>Website Development & Design</h2>
+<p>I build modern, responsive, and high-converting websites tailored to your business needs. Whether it's a landing page or a complete business website, I ensure clean design, fast performance, and mobile optimization. Reference: https://polaris-solution.netlify.app/ and https://tinywebs.site/HfJHPb</p>
 
+<p><strong>What you get:</strong></p>
+<ul>
+<li>✅ Fully responsive website</li>
+<li>✅ Clean UI/UX design</li>
+<li>✅ Fast loading performance</li>
+<li>✅ SEO-friendly structure</li>
+</ul>
+
+<div class="service-actions">
+<a href="tel:+917499685501" class="contact-btn">Call</a>
+<a href="https://wa.me/917499685501?text=Hi%20I%20want%20a%20website" target="_blank" class="whatsapp-btn">WhatsApp</a>
+</div>
+
+<img src="website.png" loading="lazy">
+<img src="website2.png" loading="lazy">
+<img src="website3.png" loading="lazy">
+<img src="website4.png" loading="lazy">
+`;
+}
 if(service==="s1"){
 content=`
 <h2>Excel & Google Workspace Problem Solving</h2>
@@ -235,5 +259,25 @@ serviceModal.style.display = "none";
 }
 if(event.target === connectModal){
 connectModal.style.display = "none";
+}
+function toggleMenu() {
+  const nav = document.getElementById("navMenu");
+  nav.classList.toggle("active");
+}
+
+/* CLOSE MENU ON CLICK */
+document.querySelectorAll("#navMenu a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("navMenu").classList.remove("active");
+  });
+});
+function openConnectModal() {
+  const modal = document.getElementById("connectModal");
+  modal.style.display = "flex";
+  history.pushState({modalOpen: true}, "");
+}
+
+function closeConnect() {
+  document.getElementById("connectModal").style.display = "none";
 }
 };
