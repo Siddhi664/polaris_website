@@ -102,6 +102,7 @@ history.pushState({modalOpen:true},"");
 
 function closeProject(){
 document.getElementById("projectModal").style.display="none";
+  document.body.style.overflow = "auto";
 }
 
 /* SERVICE MODAL FUNCTIONS */
