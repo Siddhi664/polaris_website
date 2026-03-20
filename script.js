@@ -246,20 +246,6 @@ if(connectModal.style.display === "flex"){
 connectModal.style.display = "none";
 }
 });
-
-window.onclick = function(event){
-const projectModal = document.getElementById("projectModal");
-const serviceModal = document.getElementById("serviceModal");
-const connectModal = document.getElementById("connectModal");
-if(event.target === projectModal){
-projectModal.style.display = "none";
-}
-if(event.target === serviceModal){
-serviceModal.style.display = "none";
-}
-if(event.target === connectModal){
-connectModal.style.display = "none";
-}
 function toggleMenu() {
   const nav = document.getElementById("navMenu");
   nav.classList.toggle("active");
@@ -271,6 +257,22 @@ document.querySelectorAll("#navMenu a").forEach(link => {
     document.getElementById("navMenu").classList.remove("active");
   });
 });
+
+window.onclick = function(event){
+const projectModal = document.getElementById("projectModal");
+const serviceModal = document.getElementById("serviceModal");
+const connectModal = document.getElementById("connectModal");
+
+if(event.target === projectModal){
+projectModal.style.display = "none";
+}
+if(event.target === serviceModal){
+serviceModal.style.display = "none";
+}
+if(event.target === connectModal){
+connectModal.style.display = "none";
+}};
+
 function openConnectModal() {
   const modal = document.getElementById("connectModal");
   modal.style.display = "flex";
@@ -280,4 +282,4 @@ function openConnectModal() {
 function closeConnect() {
   document.getElementById("connectModal").style.display = "none";
 }
-};
+;
