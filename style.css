@@ -535,7 +535,7 @@ text-align:center;
 max-width:100%;
 }
 .hero-left h1{
-font-size:40px;
+font-size: clamp(32px, 6vw, 60px);
 }
 .hero-right img{
 width:300px;
@@ -569,5 +569,55 @@ font-size:14px;
 background:#0b3d91;
 transform:scale(1.07);
 box-shadow: 0 0 20px rgba(0,140,255,0.6);
+}
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* STICKY HEADER */
+header{
+position: sticky;
+top: 0;
+z-index: 999;
+}
+
+/* SMOOTH SCROLL */
+html {
+scroll-behavior: smooth;
+}
+
+/* RESPONSIVE NAV */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: rgba(0,0,0,0.95);
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+    width: 200px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
 }
 }
