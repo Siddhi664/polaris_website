@@ -84,18 +84,15 @@ opacity:0.9;
 
 .hero-buttons{
 margin-top:40px;
+display:flex;
+flex-wrap:wrap;
+gap:15px;
 }
 
 .btn{
 display:inline-block;
-margin-right:15px;
-padding:12px 28px;
-border:1px solid white;
-text-decoration:none;
-color:white;
-transition:0.3s;
+padding:12px 20px;
 }
-
 .btn:hover{
 background:#0b3d91;
 transform:scale(1.07);
@@ -524,6 +521,16 @@ transform:scale(1.07);
 header{
 padding:20px 30px;
 }
+.hero-buttons{
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn{
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+}
 .hero, .about, .services, .projects, .why-choose, .faq, .contact{
 padding:60px 30px;
 }
@@ -589,7 +596,14 @@ html {
 scroll-behavior: smooth;
 }
 
-/* RESPONSIVE NAV */
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
   .hamburger {
@@ -612,12 +626,5 @@ scroll-behavior: smooth;
     display: flex;
   }
 
-  nav a {
-    margin: 10px 0;
-  }
-
-  .hero {
-    padding: 40px 20px;
-  }
 }
 }
